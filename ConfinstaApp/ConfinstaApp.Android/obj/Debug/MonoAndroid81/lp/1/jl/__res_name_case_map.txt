@@ -1,0 +1,6 @@
+layout/horizontal_viewpager.xml;layout/horizontal_viewpager.xml
+drawable/Down.png;drawable/down.png
+drawable/Next.png;drawable/next.png
+drawable/Prev.png;drawable/prev.png
+drawable/Up.png;drawable/up.png
+layout/vertical_viewpager.xml;layout/vertical_viewpager.xml

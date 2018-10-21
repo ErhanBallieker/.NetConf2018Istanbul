@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="ConfinstaApp.Views.FeedCategoryView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid Padding="0,20,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <StackLayout Orientation="Horizontal" Grid.Row="0" HeightRequest="40" Padding="10" Spacing="10">
+            <SearchBar Placeholder="Search" HorizontalOptions="FillAndExpand" WidthRequest="300" HeightRequest="30" BackgroundColor="Transparent"></SearchBar>
+            <Image HorizontalOptions="EndAndExpand" Source="3ss.png" WidthRequest="20" HeightRequest="20"></Image>
+        </StackLayout>
+
+        <ScrollView Orientation="Horizontal" Grid.Row="1" HorizontalScrollBarVisibility="Never">
+            <StackLayout Orientation="Horizontal">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <controls:CircleImage Grid.Row="0" Grid.RowSpan="2" WidthRequest="100"  HeightRequest="80" Source="music.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <Label Grid.Row="1"
+                           HorizontalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           Text="Music" 
+                           FontSize="Small" 
+                           FontAttributes="Bold"
+                           TextColor="White"></Label>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <controls:CircleImage Grid.Row="0" Grid.RowSpan="2" WidthRequest="100" HeightRequest="80" Source="nature.jpg" Aspect="AspectFit"></controls:CircleImage>
+                    <Label Grid.Row="1"
+                           HorizontalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           Text="Nature" 
+                           FontSize="Small" 
+                           FontAttributes="Bold"
+                           TextColor="White"></Label>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <controls:CircleImage Grid.Row="0" Grid.RowSpan="2" WidthRequest="100" HeightRequest="80" Source="science.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <Label Grid.Row="1"
+                           HorizontalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           Text="Science" 
+                           FontAttributes="Bold"
+                           FontSize="Small" 
+                           TextColor="White"></Label>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <controls:CircleImage Grid.Row="0" Grid.RowSpan="2" WidthRequest="100" HeightRequest="80" Source="sports.jpg" Aspect="AspectFill"></controls:CircleImage>
+
+                    <Label Grid.Row="1"
+                           HorizontalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           Text="Sports" 
+                           FontAttributes="Bold"
+                           FontSize="Small" 
+                           TextColor="White"></Label>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <controls:CircleImage Grid.Row="0" Grid.RowSpan="2" WidthRequest="100" HeightRequest="80" Source="animals.jpg" Aspect="AspectFill"></controls:CircleImage>
+
+                    <Label Grid.Row="1"
+                           HorizontalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           Text="Animals" 
+                           FontAttributes="Bold"
+                           FontSize="Small" 
+                           TextColor="White"></Label>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <controls:CircleImage Grid.Row="0" Grid.RowSpan="2" WidthRequest="100" HeightRequest="80" Source="fitness.jpg" Aspect="AspectFill"></controls:CircleImage>
+
+                    <Label Grid.Row="1"
+                           HorizontalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           Text="Fitness" 
+                           FontAttributes="Bold"
+                           FontSize="Small" 
+                           TextColor="White"></Label>
+                </Grid>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <controls:CircleImage Grid.Row="0" Grid.RowSpan="2" WidthRequest="100" HeightRequest="80" Source="comics.jpg" Aspect="AspectFill"></controls:CircleImage>
+
+                    <Label Grid.Row="1"
+                           HorizontalOptions="Center"
+                           VerticalTextAlignment="Center"
+                           Text="Comics" 
+                           FontAttributes="Bold"
+                           FontSize="Small" 
+                           TextColor="White"></Label>
+                </Grid>
+            </StackLayout>
+            
+        </ScrollView>
+
+        <ScrollView  Grid.Row="2">
+            <FlexLayout x:Name="flexLayout"
+                        Wrap="Wrap"
+                        JustifyContent="SpaceEvenly" />
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="ConfinstaApp.Views.FeedView"
+             xmlns:forms="clr-namespace:Plugin.MediaManager.Forms;assembly=Plugin.MediaManager.Forms"
+             xmlns:carousel="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             Title="Confinsta">
+    
+    <NavigationPage.TitleView>
+        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Padding="10,0,10,0" Spacing="10">
+            <Image Source="1ss.png" HorizontalOptions="StartAndExpand" WidthRequest="25" HeightRequest="25"></Image>
+            <Label Text="Confinsta" FontSize="Medium"  TextDecorations="Underline" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0,0,25,0"/>
+            <Image Source="17.png" HorizontalOptions="End" WidthRequest="25" HeightRequest="25"></Image>
+            <Image Source="3ss.png" HorizontalOptions="End" WidthRequest="25" HeightRequest="25"></Image>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <ScrollView Orientation="Horizontal" Grid.Row="0" HorizontalScrollBarVisibility="Never">
+                <StackLayout Orientation="Horizontal" Spacing="10" Padding="10">
+                    <StackLayout>
+                        <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/72.jpg" Aspect="AspectFill"></controls:CircleImage>
+                        <Label Grid.Row="5"
+                                       Margin="10,0,10,15"
+                                       Text="portraits" 
+                                       FontSize="Micro" 
+                                       TextColor="Black"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/1.jpg" Aspect="AspectFill"></controls:CircleImage>
+                        <Label Grid.Row="5"
+                                       Margin="10,0,10,15"
+                                       Text="women" 
+                                       FontSize="Micro" 
+                                       TextColor="Black"></Label>
+                    </StackLayout>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/44.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/25.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/48.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/86.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/29.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/72.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/1.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/44.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/25.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/48.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/86.jpg" Aspect="AspectFill"></controls:CircleImage>
+                    <controls:CircleImage BorderThickness="2" BorderColor="#ab423f" Source="https://randomuser.me/api/portraits/women/29.jpg" Aspect="AspectFill"></controls:CircleImage>
+                </StackLayout>
+            </ScrollView>
+
+            <ListView x:Name="ItemsListView" 
+                      Grid.Row="1"
+                      ItemsSource="{Binding CardItems}"
+                      SelectionMode="None"
+                      SeparatorVisibility="None"
+                      HasUnevenRows="true"
+                      RefreshCommand="{Binding LoadCardItemsCommand}"
+                      IsPullToRefreshEnabled="true"
+                      IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                      CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Appearing="ViewCell_Appearing">
+                            <Grid RowSpacing="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"></RowDefinition>
+                                    <RowDefinition Height="320"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <!--ROW 1-->
+                                <StackLayout Grid.Row="0" Orientation="Horizontal" Spacing="10" Padding="10,5,10,5" HorizontalOptions="FillAndExpand">
+                                    <controls:CircleImage BorderThickness="2" 
+                                                      BorderColor="#33ccff" 
+                                                      Source="{Binding ProfileImageUrl}" 
+                                                      Aspect="AspectFill"></controls:CircleImage>
+
+                                    <Label Text="{Binding Name}" 
+                                           FontSize="Small" 
+                                           TextColor="Black"
+                                           VerticalOptions="Center"></Label>
+
+                                    <Image HorizontalOptions="EndAndExpand" WidthRequest="22" HeightRequest="20" Aspect="AspectFit" Source="10.png">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="MenuTapped"></TapGestureRecognizer>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </StackLayout>
+                                
+                                <!--ROW 2 Image, Slide or Video (indicator and error label for video errors and loadings.)-->
+                                <Image Grid.Row="1"
+                                       Source="{Binding ImageUrl}"
+                                       IsVisible="{Binding IsSinglePhotoPost}"
+                                       Aspect="AspectFill"
+                                       BackgroundColor="Black">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                                    </Image.GestureRecognizers>
+                                </Image>
+
+                                <forms:VideoView x:Name="videoView"
+                                                 Grid.Row="1" 
+                                                 IsVisible="{Binding IsVideoPost}"
+                                                 HorizontalOptions="FillAndExpand"
+                                                 VerticalOptions="FillAndExpand"
+                                                 AspectMode="AspectFill">
+                                    <forms:VideoView.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>    
+                                    </forms:VideoView.GestureRecognizers>
+                                </forms:VideoView>
+
+                                <carousel:CarouselViewControl x:Name="carouselView"
+                                                              Orientation="Horizontal" 
+                                                              InterPageSpacing="0" 
+                                                              ShowIndicators="True"
+                                                              IndicatorsShape="Circle"
+                                                              IndicatorsTintColor="White"
+                                                              CurrentPageIndicatorTintColor="Black"
+                                                              Grid.Row="1" 
+                                                              IsVisible="{Binding IsMultiPhotoPost}"
+                                                              ItemsSource="{Binding PhotosItemsSource}">
+                                    <carousel:CarouselViewControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Image 
+                                                   Source="{Binding PhotoUrl}"
+                                                   Aspect="AspectFill"
+                                                   BackgroundColor="Black"></Image>
+                                        </DataTemplate>
+                                    </carousel:CarouselViewControl.ItemTemplate>
+                                    <carousel:CarouselViewControl.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                                    </carousel:CarouselViewControl.GestureRecognizers>
+                                </carousel:CarouselViewControl>
+
+                                <ActivityIndicator Grid.Row="1"
+                                                   VerticalOptions="Center"
+                                                   Color="Black"
+                                                   HorizontalOptions="Center"
+                                                   IsVisible="{Binding IsVideoBuffering}"
+                                                   IsRunning="{Binding IsVideoBuffering}"></ActivityIndicator>
+
+                                <Label Text="There is an error occured while loading the video" 
+                                       Grid.Row="1"
+                                       IsVisible="{Binding ErrorOnVideoLoadBindable}"
+                                       FontSize="Small" 
+                                       TextColor="Gray"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"></Label>
+
+                                <!--ROW 3 function buttons-->
+                                <StackLayout Grid.Row="2" Orientation="Horizontal" Spacing="10" Padding="10,0,10,0">
+                                    <Image WidthRequest="23" HeightRequest="23" Aspect="AspectFit" Source="2.png"></Image>
+                                    <Image WidthRequest="23" HeightRequest="23" Aspect="AspectFit" Source="5.png"></Image>
+                                    <Image WidthRequest="23" HeightRequest="23" Aspect="AspectFit" Source="3.png"></Image>
+
+                                    <Image HorizontalOptions="EndAndExpand" WidthRequest="23" HeightRequest="23" Aspect="AspectFit" Source="4.png"></Image>
+                                </StackLayout>
+
+                                <!--ROW 4 like count label-->
+                                <Label Grid.Row="3"
+                                       Text="{Binding LikeCount, StringFormat='{0} likes'}" 
+                                       IsVisible="{Binding HaveLike}" 
+                                       FontSize="Micro" 
+                                       Margin="10,0,10,0"
+                                       TextColor="Black"></Label>
+
+                                <!--ROW 5 Showcase command-->
+                                <StackLayout Grid.Row="4" IsVisible="{Binding HaveComment}" Spacing="10" Padding="10,0,10,0" Orientation="Horizontal">
+                                    <Label
+                                       Text="{Binding ShowcaseComment.Name}" 
+                                        MinimumWidthRequest="100"
+                                       FontSize="Micro" 
+                                       FontAttributes="Bold"
+                                       TextColor="Black"></Label>
+
+                                    <Label
+                                       Text="{Binding ShowcaseComment.Comment}" 
+                                       FontSize="Micro" 
+                                       LineBreakMode="TailTruncation"
+                                        MaxLines="2"
+                                        TextColor="Black"></Label>
+                                </StackLayout>
+
+                                <!--ROW 6 More Comment Selection-->
+                                <Label Grid.Row="5"
+                                       Margin="10,0,10,15"
+                                       Text="{Binding CommentCount, StringFormat='View all {0} comments'}" 
+                                       IsVisible="{Binding HaveMoreComment}" 
+                                       FontSize="Micro" 
+                                       TextColor="Gray"></Label>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <ManifestDocuments>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\21\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\22\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\24\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\25\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\26\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\27\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\28\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\29\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\30\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\31\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\32\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\33\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\34\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\35\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\36\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\\Debug\MonoAndroid81\lp\37\jl\AndroidManifest.xml</ManifestDocument>
+  </ManifestDocuments>
+  <NativeLibraries />
+  <Jars>
+    <Jar>obj\\Debug\MonoAndroid81\lp\19\jl\arch-core-common.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\20\jl\arch-lifecycle-common.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\21\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\22\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\23\jl\support-annotations.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\24\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\25\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\26\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\27\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\28\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\29\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\30\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\31\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\32\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\33\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\34\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\35\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\36\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\37\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\5\jl\formsviewgroup.jar</Jar>
+  </Jars>
+</Paths>

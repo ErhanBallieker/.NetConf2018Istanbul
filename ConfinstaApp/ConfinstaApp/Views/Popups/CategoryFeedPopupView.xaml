@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" 
+                  x:Class="ConfinstaApp.Views.Popups.CategoryFeedPopupView"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup" 
+                 xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+                 CloseWhenBackgroundIsClicked="False"
+                 InputTransparent="False"
+                 Padding="20,0,20,0">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation PositionIn="Center" PositionOut="Center" HasBackgroundAnimation="True" />
+    </pages:PopupPage.Animation>
+
+    <Frame BackgroundColor="#fff" VerticalOptions="Center" CornerRadius="15" x:Name="mainFrame">
+        <Frame.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Down" Swiped="SwipeGestureRecognizer_Swiped"></SwipeGestureRecognizer>
+            <SwipeGestureRecognizer Direction="Up" Swiped="SwipeGestureRecognizer_Swiped"></SwipeGestureRecognizer>
+        </Frame.GestureRecognizers>
+        <StackLayout IsClippedToBounds="True" Spacing="0">
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="10" Spacing="0">
+                <controls:CircleImage HorizontalOptions="StartAndExpand" Source="https://randomuser.me/api/portraits/women/72.jpg" Aspect="AspectFill" WidthRequest="50" HeightRequest="50"></controls:CircleImage>
+                <Label FontSize="Large" TextColor="Black" FontAttributes="Bold" Text="Jojo Mayer" VerticalOptions="Center" HorizontalOptions="StartAndExpand"></Label>
+            </StackLayout>
+            <Image Source="{Binding PhotoUrl}" WidthRequest="300" HeightRequest="250"></Image>
+        </StackLayout>
+    </Frame>
+</pages:PopupPage>

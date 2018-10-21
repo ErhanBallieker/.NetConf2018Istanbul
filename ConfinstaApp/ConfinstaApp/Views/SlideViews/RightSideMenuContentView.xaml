@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<t:SlideMenuView xmlns="http://xamarin.com/schemas/2014/forms" 
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                 xmlns:t="clr-namespace:SlideOverKit" 
+                 x:Class="ConfinstaApp.Views.SlideViews.RightSideMenuContentView">
+
+    <StackLayout Padding="15,50,15,30" Spacing="20" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+        <Label HeightRequest="30" Margin="0,0,0,80" Text="Menu" FontSize="20" XAlign="Center" TextDecorations="Underline" />
+
+        <Label HeightRequest="30" Text="Insights" FontSize="20" XAlign="Start" YAlign="Center" TextDecorations="Underline" />
+        <Label HeightRequest="30" Text="Your Activity" FontSize="20" XAlign="Start" YAlign="Center" TextDecorations="Underline"/>
+        <Label HeightRequest="30" Text="Nametag" FontSize="20" XAlign="Start" YAlign="Center" TextDecorations="Underline"/>
+        <Label HeightRequest="30" Text="Saved" FontSize="20" XAlign="Start" YAlign="Center" TextDecorations="Underline"/>
+        <Label HeightRequest="30" Text="Discover People" FontSize="20" XAlign="Start" YAlign="Center" TextDecorations="Underline"/>
+        <Image HeightRequest="40" Source="nature.png"></Image>
+        <Label HeightRequest="30" Text="Settings" FontSize="20" XAlign="Start" YAlign="Center" VerticalOptions="EndAndExpand" TextDecorations="Underline"/>
+
+    </StackLayout>
+</t:SlideMenuView>

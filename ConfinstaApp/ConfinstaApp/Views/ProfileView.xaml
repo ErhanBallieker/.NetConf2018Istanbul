@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConfinstaApp.Views.ProfileView">
+
+    <NavigationPage.TitleView>
+        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Padding="10,0,10,0" Spacing="10">
+            <Image Source="17.png" HorizontalOptions="StartAndExpand" WidthRequest="25" HeightRequest="25"></Image>
+            <Label Text="erhanballieker" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0,0,25,0"/>
+            <Image Source="11.png" HorizontalOptions="End" WidthRequest="25" HeightRequest="25">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label FontSize="Medium" FontAttributes="Bold" Text="erhanballieker Profile Page" HorizontalOptions="Center"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

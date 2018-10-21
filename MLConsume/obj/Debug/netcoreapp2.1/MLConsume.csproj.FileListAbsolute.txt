@@ -1,0 +1,11 @@
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\bin\Debug\netcoreapp2.1\MLConsume.deps.json
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\bin\Debug\netcoreapp2.1\MLConsume.runtimeconfig.json
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\bin\Debug\netcoreapp2.1\MLConsume.runtimeconfig.dev.json
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\bin\Debug\netcoreapp2.1\MLConsume.dll
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\obj\Debug\netcoreapp2.1\MLConsume.csprojAssemblyReference.cache
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\obj\Debug\netcoreapp2.1\MLConsume.csproj.CoreCompileInputs.cache
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\obj\Debug\netcoreapp2.1\MLConsume.AssemblyInfoInputs.cache
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\obj\Debug\netcoreapp2.1\MLConsume.AssemblyInfo.cs
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\bin\Debug\netcoreapp2.1\MLConsume.pdb
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\obj\Debug\netcoreapp2.1\MLConsume.dll
+C:\Users\erhan\source\repos\ConfInsta\MLConsume\obj\Debug\netcoreapp2.1\MLConsume.pdb
